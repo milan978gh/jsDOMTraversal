@@ -1,0 +1,22 @@
+
+.grandparent {
+  background-color: hsl(0, 50%, 50%);
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 80vh;
+}
+.parent {
+  background-color: hsl(100, 50%, 50%);
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 40%;
+  margin: auto;
+}
+.child {
+  background-color: hsl(200, 50%, 50%);
+  width: 30%;
+  height: 60%;
+  margin: auto;
+}
