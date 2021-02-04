@@ -19,9 +19,17 @@ const parentOne = parents[0];
 const children = parentOne.children;
 changeColor(children[0]);*/
 
-const grandparent = document.querySelector('.grandparent');
+/*const grandparent = document.querySelector('.grandparent');
 const children = grandparent.querySelectorAll('.child');
-children.forEach(changeColor);
+children.forEach(changeColor);*/
+
+const childOne = document.getElementById('child-one');
+const parent = childOne.parentElement;
+// const grandparent = childOne.closest('.grandparent');
+const grandparent = childOne.closest('#grandparent-id');
+const childTwo=childOne.nextElementSibling;
+// changeColor(childTwo);
+changeColor(childTwo.previousElementSibling);
 
 
 function changeColor(element) {
